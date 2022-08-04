@@ -1,0 +1,414 @@
+body{
+    margin: 0;
+}
+:root{
+    --lemon-green: #6ce426;
+    --green: #136908;
+    --griz: #323f34;
+    --black-gren2: #092e00;
+    --black-green: #171e2b;
+    --san : Arial Narrow, sans-serif;
+    --mono : Andale Mono, monospace;
+    --dark-green :#030a0a ;
+    
+}
+.conteiner{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: var(--dark-green);
+    position: relative;
+}
+
+.conten{
+  position: absolute;
+    width: 30rem;
+    height: 32rem;
+    display: flex;
+    flex-direction: row;
+    border: 3px solid;
+    border-color:var(--lemon-green);
+    border-radius: 4rem;
+    background-color: var(--black-gren2);
+    overflow: hidden;
+}
+.conteiner_alien{
+    width:100% ;
+    height: 100%;
+    
+    box-shadow: 30px 3px 30px 30px rgba(0,0,0,0.78) inset;
+  
+}
+.conteiner_alien img{
+  height: 100%;
+ margin: 20px;
+}
+.preloader{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 16rem;
+    
+}
+
+.button-57 {
+  position: relative;
+ overflow: hidden;
+  border: 1px solid var(--black-gren2);
+  color: var(--lemon-green);
+  display: inline-block;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 18px 18px 17px;
+  text-decoration: none;
+  cursor: pointer;
+  background: var(--black-gren2);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width:10rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.78) inset;
+}
+
+.button-57 span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+}
+
+.button-57 span:last-child {
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+ 
+}
+
+.button-57:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-green);
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.3deg) scaleY(0);
+  z-index: 50;
+}
+
+.button-57:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(2);
+}
+
+.button-57:hover span:last-child {
+  transform: translateX(-50%) translateY(-100%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
+
+
+/* last buttom //////////////////////////////////*/
+
+
+.button-57-last{
+    position: relative;
+   overflow: hidden;
+    border: 1px solid var(--black-gren2);
+    color: var(--lemon-green);
+    display: inline-block;
+    font-size: 15px;
+    line-height: 15px;
+    padding: 18px 18px 17px;
+    text-decoration: none;
+    cursor: pointer;
+    background: var(--black-gren2);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 10rem;
+    height: 20rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem; 
+    margin-left: 1rem;
+    box-shadow: 0px 3px 0px 0px rgba(0,0,0,0.78) inset;
+  }
+  
+  .button-57-last span:first-child {
+    position: relative;
+    transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 10;
+    display: block;
+    margin-bottom: 16rem;
+
+  }
+  
+  .button-57-last span:last-child {
+    color: white;
+    display: block;
+    position: absolute;
+  
+    transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+    z-index: 100;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translateY(225%) translateX(-50%);
+    height: 14px;
+    line-height: 13px;
+    top: 25px;
+   
+  }
+  
+  .button-57-last:after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--dark-green);
+    transform-origin: bottom center;
+    transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+    transform: skewY(9.3deg) scaleY(0);
+    z-index: 50;
+  }
+  
+  .button-57-last:hover:after {
+    transform-origin: bottom center;
+    transform: skewY(9.3deg) scaleY(2);
+  }
+  
+  .button-57-last:hover span:last-child {
+    transform: translateX(-50%) translateY(-100%);
+    opacity: 1;
+    transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+  }
+  h1{
+    color: var(--lemon-green);
+    font-family: var(--mono);
+    font-weight: bold;
+    margin-right: 1rem;
+    margin-bottom: 35rem;
+  }
+  
+  span{
+    font-family: var(--mono);
+    font-weight: bold;
+  }
+a{
+    text-decoration: none;
+    color: var(--green);
+    font-weight: bold;
+    font-family: var(--san);
+    font-size: 1.4rem;
+    border-bottom: 4px solid;
+    border-color:var(--lemon-green) ;
+}
+
+
+
+/* //////////load ///////////////////////*/
+
+
+.conteiner-general{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 9999;
+    transition: all 5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--black-green);
+    
+}
+
+.omnitrix{
+    position: relative;
+}
+
+.omnitrix .conteiner1{
+    position: relative;
+
+    width: 30rem;
+    height: 30rem;
+
+    border-radius: 50%;
+    background-color: var(--griz);
+
+    box-shadow: inset 4px 4px 18px 7px rgba(0, 0, 0, .75);
+}
+
+.omnitrix .conteiner1 .box{
+    position: absolute;
+    display: grid;
+    place-content: center;
+    width: 15rem;
+    height: 15rem;
+  
+    
+    background: var(--griz);
+    box-shadow: inset 0px 0px 18px 20px rgba(0, 0, 0, .75) ;
+}
+.omnitrix .conteiner1 .box .item0{
+   position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--green);
+    top: -1.5rem;
+    left: -3rem;
+    border:solid 5px rgb(20, 3, 3);
+    animation: rotate 3s, background-color 3s ;
+    
+
+}
+.omnitrix .conteiner1 .box .item1{
+    position: relative;
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     background-color: var(--green);
+     top: -1.5rem;
+     left: 3rem;
+     border:solid 5px rgb(20, 3, 3);
+     animation: rotate 3s, background-color 3s ;
+ 
+ }
+ .omnitrix .conteiner1 .box .item2{
+    position: relative;
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     background-color: var(--green);
+     top: 1.5rem;
+     left: -3rem;
+     border:solid 5px rgb(20, 3, 3);
+     animation: rotate 3s, background-color 3s ;
+ 
+ }
+ .omnitrix .conteiner1 .box .item3{
+    position: relative;
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     background-color: var(--green);
+     top: 1.5rem;
+     left: 3rem;
+     border:solid 5px rgb(20, 3, 3);
+     animation: rotate 3s, background-color 3s ;
+ 
+ }
+   
+
+.omnitrix .conteiner1 .box.sub-box1{
+    top: 0rem;
+    left: 0rem;
+    
+    border-radius: 100% 0% 0% 0%;
+}
+
+.omnitrix .conteiner1 .box.sub-box2{
+    top: 0rem;
+    left: 15rem;
+    
+    border-radius: 0% 100% 0% 0%;
+}
+
+.omnitrix .conteiner1 .box.sub-box3{
+    top: 15rem;
+    left: 0rem;
+
+    border-radius: 0% 0% 0% 100%;
+}
+
+.omnitrix .conteiner1 .sub-box4{
+    
+    top: 15rem;
+    left: 15rem;
+    
+    border-radius:0% 0% 100% 0%;
+}
+.omnitrix .conteiner1 .disk{ 
+    position: relative;
+
+    top: 2.25rem;
+    left: 2.25rem;
+
+    width: 25.5rem;
+    height: 25.5rem;
+
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.omnitrix .conteiner1 .disk .centro
+{
+    position: relative;
+
+    top: 1.5rem;
+    left: 1.5rem;
+
+    width: 22.5rem;
+    height: 22.5rem;
+
+    border-radius: 50%;
+    background-color: var(--green);
+    box-shadow: inset 4px 4px 15px 3px rgba(0, 0, 0, .75) ;
+
+    animation: rotate 3s, background-color 3s ;
+    
+}
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg)
+    }
+    100% {
+      transform: rotate(720deg)
+      
+    }
+    100% {
+        background-color: var(--lemon-green);
+        
+      }
+  }
+
+
+.omnitrix .conteiner1 .disk .centro .box-left,
+.omnitrix .conteiner1 .disk .centro .box-right{
+    position: relative;
+
+    width: 150px;
+    height: 300px;
+
+    background-color: #000;
+    
+    clip-path: polygon(100% 50%, 0 0, 0 100%);  
+    border-radius: 70% 0 0 70%;                 
+}
+.omnitrix .conteiner1 .disk .centro .box-left{
+    top: 2.25rem;
+    left: -0.15rem;
+}
+
+.omnitrix .conteiner1 .disk .centro .box-right{
+    top: -16.5rem;
+    left: 13.275rem;
+    transform: rotate(180deg);
+}
